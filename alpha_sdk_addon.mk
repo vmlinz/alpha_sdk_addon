@@ -34,6 +34,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
 # The name of this add-on (for the build system)
 # Use 'make PRODUCT-<PRODUCT_NAME>-sdk_addon' to build the an add-on, 
 # so in this case, we would run 'make PRODUCT-marakana_alpha_addon-sdk_addon'
-PRODUCT_NAME := marakana_alpha_addon
+PRODUCT_NAME := alpha_sdk_addon
 PRODUCT_DEVICE := alpha
 PRODUCT_MODEL := Marakana Alpha SDK Addon Image for Emulator
