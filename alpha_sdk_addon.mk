@@ -28,6 +28,9 @@ PRODUCT_SDK_ADDON_DOC_MODULES := \
 # Since the add-on is an emulator, we also need to explicitly copy the kernel to images
 PRODUCT_SDK_ADDON_COPY_FILES += $(LOCAL_KERNEL):images/armeabi-v7a/kernel-qemu
 
+# Define a config file for the emulated acceleration
+BOARD_EGL_CFG := device/generic/goldfish/opengl/system/egl/egl.cfg
+
 # This add-on extends the default sdk product.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
 
